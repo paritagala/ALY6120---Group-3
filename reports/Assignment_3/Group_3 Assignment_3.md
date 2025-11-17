@@ -16,7 +16,8 @@ application in HR analytics research gives a great number of benchmarks for resu
 attrition patterns and the use of data for planning the workforce.
 
 ### Source for the data (https://www.kaggle.com/datasets/hannycharlotte/employee-attrition-ibm-dataset)
-The IBM HR Analytics Employee Attrition & Performance dataset is a synthetic dataset developed by IBM's data scientists, featuring details on 1,470 employees. The dataset comprises 35 variables that include demographic information, job-related attributes, satisfaction indicators, and compensation metrics such as Age, Department, Job Satisfaction, Monthly Income, Performance Rating, Work-Life Balance, and Years at Company. This dataset allows for the analysis of elements that lead to employee turnover and helps in developing predictive models to determine those who might be prone to departing. This enables HR teams to implement proactive actions. The dataset is available on Kaggle, making it ideal for machine learning projects and applications centered on predicting attrition. 
+The IBM HR Analytics Employee Attrition & Performance dataset is a synthetic dataset developed by IBM's data scientists, featuring details on 1,470 employees. In the dataset chosen, we observed that there were 35 variables that included demographic information, job-related attributes, satisfaction indicators, and compensation metrics such as Age, Department, Job Satisfaction, Monthly Income, Performance Rating, Work-Life Balance, and number of Years at the Company. This dataset allows that we can analyze elements that can lead to employee turnover and also help us in developing predictive models to determine those who might be prone to departing. This enables HR teams to implement proactive actions. The dataset is available on Kaggle, making it ideal for machine learning projects and applications centered on predicting attrition.
+Dataset Link: (https://www.kaggle.com/datasets/hannycharlotte/employee-attrition-ibm-dataset)
 
 ### Key data elements to address the business problem and why
 To effectively grasp and forecast employee turnover, seven crucial factors from the IBM HR dataset offer detailed insights into the reasons employees depart and facilitate focused retention efforts. Job Satisfaction evaluates how happy employees are in their positions, aiding in the identification of morale concerns that may forecast premature exits. Monthly Income reflects existing salary levels, enabling evaluation of whether pay disparities contribute to turnover and uncovering possible compensation inequalities based on experience or market rates. 
@@ -26,3 +27,10 @@ When these factors are examined, they enable the company to pinpoint the underly
 While low pay relative to experience indicates wage discrepancy, high overtime combined with low satisfaction rates indicates insufficient workload management.
 When we pay attention to these factors, we can spot when someone's struggling before they quit. Then we can actually help whether that's flexible hours, fair pay, or just listening. The goal isn't sophisticated analytics, it's using what we learn to create a workplace where people genuinely want to stay, and when employees feel valued, everyone wins.
 
+###Reference
+Hausknecht, J. P., & Holwerda, J. A. (2013). When does employee turnover matter? Dynamic member configurations, productive capacity, and collective performance. Organization Science, 24(1), 210–225. https://doi.org/10.1287/orsc.1110.0720
+
+Hom, P. W., Lee, T. W., Shaw, J. D., & Hausknecht, J. P. (2017). One hundred years of employee turnover theory and research. Journal of Applied Psychology, 102(3), 530–545. https://doi.org/10.1037/apl0000103
+
+IBM. (2019). IBM HR Analytics Employee Attrition & Performance Dataset [Data set]. Kaggle.
+https://www.kaggle.com/datasets/hannycharlotte/employee-attrition-ibm-dataset
