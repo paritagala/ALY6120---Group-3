@@ -27,7 +27,7 @@ When these factors are examined, they enable the company to pinpoint the underly
 While low pay relative to experience indicates wage discrepancy, high overtime combined with low satisfaction rates indicates insufficient workload management.
 When we pay attention to these factors, we can spot when someone's struggling before they quit. Then we can actually help whether that's flexible hours, fair pay, or just listening. The goal isn't sophisticated analytics, it's using what we learn to create a workplace where people genuinely want to stay, and when employees feel valued, everyone wins.
 
-###Reference
+### Reference
 Hausknecht, J. P., & Holwerda, J. A. (2013). When does employee turnover matter? Dynamic member configurations, productive capacity, and collective performance. Organization Science, 24(1), 210–225. https://doi.org/10.1287/orsc.1110.0720
 
 Hom, P. W., Lee, T. W., Shaw, J. D., & Hausknecht, J. P. (2017). One hundred years of employee turnover theory and research. Journal of Applied Psychology, 102(3), 530–545. https://doi.org/10.1037/apl0000103
