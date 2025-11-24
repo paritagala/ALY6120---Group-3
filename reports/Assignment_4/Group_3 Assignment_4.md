@@ -22,3 +22,27 @@ Next, the data would be checked for incorrect values, for example negative ages,
 Outlier detection is essential for numerical fields such as monthly income, years of experience, distance from home, or daily rate. The outliers that would be identified may indicate data entry errors or genuinely extreme cases which would be evaluated and either corrected or removed depending on context.
 
 The final step would be to ensure correct data types and documenting all cleaning decisions be to ensure transparency for the modelling team.
+
+### HOW THE DATA WILL BE ACQUIRED
+We will obtain the IBM HR Analytics Employee Attrition & Performance dataset from Kaggle, a reliable source for publicly accessible datasets utilized in both academic and professional analytics.
+
+Acquisition and Validity : We will go to Kaggle's official IBM HR Analytics repository, obtain the CSV file, and confirm that it includes the necessary variables (Age, Attrition, Job Satisfaction, Monthly Income, Years at Company, Work-Life Balance, etc.) without any corruption or missing information.
+
+Protected Storage : The dataset would be stored in a well-organized project directory with distinct naming rules (e.g., IBM_HR_Analytics_Raw_2025-11-22.csv), keeping the original file distinct from its processed copies to guarantee reproducibility.
+Load into Tools: We would bring the data into Python using pandas (pd.read_csv()) for analysis and cleaning, or into Power BI through the "Get Data" connector for visualization. Depending on the modelling needs, we may also use R or Jupyter notebooks.
+
+Document Source: We would maintain a README file documenting the source (Kaggle), download date, original creators (IBM Watson Analytics), and any preprocessing steps applied.
+Since this is a synthetic dataset created for educational purposes, it contains no real employee information, eliminating privacy concerns while providing a realistic HR analytics practice.
+
+### TEAM MEMBERS WE WOULD COLLABORATE WITH
+An HR Business partner or HR Analyst will provide domain expertise on workforce metrics and organizational practices. They would validate my interpretation of variables like Job Satisfaction and Work Life Balance, explain what constitutes concerning attrition rates, and help translate analytical findings into actionable retention strategies HR leadership can implement.
+
+A Data Scientist or Analytics Manager oversees methodology and technical approach. They would review our feature selection for the attrition prediction model, recommend appropriate algorithms (logistic regression, decision trees, random forest), validate model performance interpretation, and ensure we follow best practices while avoiding pitfalls like overfitting.
+
+IT/Database Professional (for real organizational data) manages data access, quality, and security. While unnecessary for this public Kaggle dataset, they become critical when working with actual employee information systems, providing data extraction, explaining table relationships, and ensuring proper security protocols.
+
+HR Leadership (Stakeholders) represents the end users of our analysis. We shall work together with them to grasp their particular retention inquiries, specify what choices they must make, and deliver results in understandable formats that encourage action instead of merely generating technical documents.
+
+Data Governance or Privacy Officer (in practical applications) guarantees adherence to regulations such as PIPEDA, FIPPA, or GDPR. Although this synthetic dataset doesn't need supervision, real HR data necessitates their authorization and direction regarding de-identification and privacy measures.
+
+Within an academic environment, we would partner with our instructor for methodological advice and engage with classmates for peer evaluations and different analytical strategies. This cooperative method guarantees that the analysis is technically robust, relevant to the domain, and applicable for decision-making within the organization.
