@@ -12,6 +12,29 @@ Professor: Abeba N. Turi
 
 Date: November 23, 2025
 
+## Identify Your Data Sources
+
+For this project, the primary dataset is the IBM HR Analytics Employee Attrition & Performance dataset. This dataset includes:
+Employee Demographics: Age, gender, marital status, education, education field.
+
+Job & Organizational Variables: Job role, department, job level, job satisfaction, environment satisfaction, work-life balance.
+Compensation & Benefits: Monthly income, hourly rate, stock option level, percent salary hike.
+Performance & Engagement: Performance rating, relationship satisfaction, training times last year.
+Workplace Behavior: Distance from home, overtime status, total working years, job involvement.
+Attrition Labels: Whether the employee left the company (Yes/No).
+
+
+## Determine Whether They Can Be Acquired Internally or Externally
+
+Internal Acquisition:
+In a real corporate setting, HR departments would acquire this type of data internally from HRIS, payroll, performance management systems, and employee engagement systems. All the variables present in the IBM dataset map directly to internal company systems.
+
+External Acquisition:
+For academic or training purposes, the IBM HR Analytics Attrition dataset is publicly available externally (e.g., via Kaggle).
+Therefore, while the dataset represents internal HR data, it is accessed externally for this project.
+<img width="468" height="283" alt="image" src="https://github.com/user-attachments/assets/19679b83-94a3-4077-ba8b-f693e0d8c779" />
+
+
 Data Preparation and Quality Assessment
 
 In this assignment, before the data would be passed on for further modelling, we would employ several preparation steps to ensure that there is data quality, reliability, and suitability for the predictive modelling, considering that the focus for the analysis here is attrition.
