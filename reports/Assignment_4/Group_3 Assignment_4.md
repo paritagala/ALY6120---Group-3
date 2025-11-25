@@ -32,7 +32,6 @@ In a real corporate setting, HR departments would acquire this type of data inte
 External Acquisition:
 For academic or training purposes, the IBM HR Analytics Attrition dataset is publicly available externally (e.g., via Kaggle).
 Therefore, while the dataset represents internal HR data, it is accessed externally for this project.
-<img width="468" height="283" alt="image" src="https://github.com/user-attachments/assets/19679b83-94a3-4077-ba8b-f693e0d8c779" />
 
 
 Data Preparation and Quality Assessment
