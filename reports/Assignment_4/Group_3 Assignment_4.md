@@ -2,7 +2,7 @@
 
 ### Course: Leadership in Analytics (ALY6120)
 
-### Module 3 Assignment (Group 3)
+### Module 4 Assignment (Group 3)
 
 ### CRISP-DM Cycle: Data Preparation
 
