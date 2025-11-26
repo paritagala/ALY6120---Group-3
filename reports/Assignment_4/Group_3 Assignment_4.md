@@ -1,4 +1,4 @@
-Northeastern University Vancouver
+Northeastern University, Vancouver
 
 Course: Leadership in Analytics (ALY6120)
 
