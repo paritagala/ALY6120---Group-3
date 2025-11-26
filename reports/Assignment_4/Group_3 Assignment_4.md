@@ -1,18 +1,18 @@
 ### Northeastern University, Vancouver
 
-### Course: Leadership in Analytics (ALY6120)
+### Course: ALY6120 - Leadership in Analytics 
 
 ### Module 4 Assignment (Group 3)
 
 ### CRISP-DM Cycle: Data Preparation
+
+### Title: Employee Attrition Prediction Analysis
 
 ### Student Names: Parita Gala, Josephine Agbedoawu, Jiansheng Shentu, Godfred Akoto
 
 ### Professor: Abeba N. Turi
 
 ### Date: November 23, 2025
-
-### Title: Employee Attrition Prediction Analysis
 
 
 ### Identify Your Data Sources
