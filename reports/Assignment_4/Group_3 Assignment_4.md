@@ -69,3 +69,79 @@ Next, the data would be checked for incorrect values, for example negative ages,
 Outlier detection is essential for numerical fields such as monthly income, years of experience, distance from home, or daily rate. The outliers that would be identified may indicate data entry errors or genuinely extreme cases which would be evaluated and either corrected or removed depending on context.
 
 The final step would be to ensure correct data types and documenting all cleaning decisions be to ensure transparency for the modelling team.
+
+**Models to Employ and Rationale**
+
+To uncover meaningful patterns in employee attrition, I would use a combination of descriptive, predictive, and exploratory models. Each model offers unique advantages that support both discovery and decision-making in an HR analytics context.
+
+1. Logistic Regression (Primary Predictive Model)
+
+Why this model: Logistic regression is the foundational predictive model for a binary classification problem such as attrition (Yes/No). It provides high interpretability, making it ideal for HR stakeholders who require transparent and ethically defensible insights.
+
+What it contributes:
+
+Interpretability: Coefficients directly show whether a variable increases or decreases attrition risk, helping HR teams translate findings into action.
+
+Transparency: Supports fairness, compliance, and explainability—critical in HR-related decisions.
+
+Baseline standard: Serves as a benchmark for evaluating more complex models.
+
+Logistic regression is especially useful in identifying key drivers of attrition such as overtime status, job satisfaction, or distance from home, making it the preferred first step before building more complex models.
+
+2. Decision Trees
+
+Why this model: Decision trees mimic human decision-making and are easy to communicate. They reveal how combinations of variables form meaningful patterns that influence employee turnover.
+
+What it contributes:
+
+Clear segmentation: Shows how specific groups behave (e.g., low satisfaction + long commute → high attrition).
+
+Captures non-linearity: Identifies relationships logistic regression may miss.
+
+Practical insights: Produces simple rules that HR leaders can directly apply in retention strategies.
+
+Decision trees are ideal when the goal is to understand which profiles of employees face the highest attrition risk and why.
+
+3. Random Forest (Ensemble Model for Enhanced Accuracy)
+
+Why this model: Random Forest reduces the instability of individual decision trees by aggregating many of them, resulting in better accuracy and generalizability.
+
+What it contributes:
+
+High predictive power: Handles complex interactions in HR data.
+
+Feature importance rankings: Shows which variables matter most across thousands of trees.
+
+Reduced overfitting: Ensemble structure ensures more reliable predictions.
+
+This model is especially beneficial when working with multiple interacting variables such as income, job level, environment satisfaction, and years at company.
+
+4. Gradient Boosting Models (e.g., XGBoost)
+
+Why this model: XGBoost builds trees sequentially, allowing each tree to correct the errors of the previous one. It is often the highest-performing model on structured tabular data like HR datasets.
+
+What it contributes:
+
+Optimized accuracy: Excellent for maximizing predictive performance when stakes are high.
+
+Handles imbalance: Attrition datasets often have far more “No” than “Yes” cases; boosting models manage this better.
+
+Captures subtle interactions: Learns complex patterns logistic regression and simple trees cannot detect.
+
+Because these models are less interpretable, they are best used after ensuring fairness and applying explainability techniques (e.g., SHAP values) if used in real HR contexts.
+
+5. Cluster Analysis (Exploratory Model)
+
+Why this model: Before prediction, clustering helps uncover natural groupings of employees that may not be immediately visible.
+
+What it contributes:
+
+Hidden patterns: Reveals employee segments that face similar workplace conditions or risks.
+
+Better feature engineering: Insights can guide variable transformations or groupings for predictive models.
+
+Targeted interventions: HR can design differentiated retention strategies for specific clusters (e.g., early-career employees with heavy workloads).
+
+Cluster analysis enhances understanding at a population level and strengthens later predictive modelling.
+<img width="468" height="612" alt="image" src="https://github.com/user-attachments/assets/d5393153-a8c7-47b1-82e0-f86edde41b42" />
+
