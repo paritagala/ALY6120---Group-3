@@ -143,5 +143,4 @@ Better feature engineering: Insights can guide variable transformations or group
 Targeted interventions: HR can design differentiated retention strategies for specific clusters (e.g., early-career employees with heavy workloads).
 
 Cluster analysis enhances understanding at a population level and strengthens later predictive modelling.
-<img width="468" height="612" alt="image" src="https://github.com/user-attachments/assets/d5393153-a8c7-47b1-82e0-f86edde41b42" />
 
