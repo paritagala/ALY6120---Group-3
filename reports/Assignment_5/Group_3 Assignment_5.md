@@ -28,14 +28,23 @@ This is where we get our best predictions. It handles all the messiness in our I
 Together, these models let us start simple and interpretable, then build up to the accuracy we need for real retention decisions.
 
 ### 2. Describe How the Model(s) Will Address the Business Problem
-The real challenge organizations face is not just knowing turnover happens; it's knowing who might leave and being able to do something about it before they have already decided. That is exactly what these models solve.
-Finding people at risk early, by examining factors such as monthly earnings, tenure at the company, and overtime trends, we can identify employees exhibiting worrying patterns before they begin searching for new jobs. HR can then engage in crucial check-in discussions while there is still an opportunity to resolve issues, instead of performing exit interviews once someone has already left.
-Understanding What Matters: These models do not just predict, they tell us why. If we discover that work-life balance is the biggest driver in a particular department, that is actionable. 
-We are confident about offering better pay or flexible hours; we know which option will genuinely have an impact. This is especially important when retention budgets are limited and need to be used wisely.
-Customizing Our Reply: Not everyone departs for identical reasons. A top achiever may feel dissatisfied due to limited growth prospects, whereas another person might simply be exhausted from continual extra hours. The models assist us in recognizing these various scenarios so we can react suitably: career discussions for some, workload modifications for others
-Making the Business Case: When we can forecast that certain roles or departments will likely see higher turnover and quantify the cost (typically 50-200% of someone's salary when you factor in recruitment, training, and lost productivity), it becomes much easier to justify investing in retention programs. We are showing clear ROI rather than just saying retention is important.
-Changing How HR Operates: This shifts the entire approach from reactive to strategic. Instead of wondering why someone left after they are gone, we are identifying risks and addressing them proactively. It is the kind of analytics-enabled decision-making we have been discussing throughout this course, using data to drive real organizational change.
-What makes this work is that we are not just building models for the sake of having predictions. We are developing a system that truly assists organizations in retaining valuable employees, minimizes the ongoing cycle of recruitment and training, and fosters more stable teams. The main goal of utilizing analytics in HR is to enhance workplaces by making informed decisions.
+Our models will help the company move from reacting to turnover to preventing it. By analyzing factors like income, tenure, overtime, and job satisfaction, they will show who is most at risk and the reasons behind it. This allows HR to intervene early with targeted actions—improving work-life balance, offering growth opportunities, or adjusting workloads. The models also quantify the cost of turnover and highlight high-risk roles, making retention efforts easier to justify. Overall, they give HR a clear, data-driven way to address problems before employees decide to leave.
+
+### 3. Attrition Model Summary
+The models were chosen for a strategic balance. Logistic Regression is prized for its high interpretability through directional coefficients, but it fails to capture complexity. Decision Trees identify actionable, non-linear interaction rules but risk overfitting. The Random Forest offers the highest accuracy for prediction but is a "black box," requiring reliance on Feature Importance rather than direct causal explanation (Hastie et al., 2009; Shmueli et al., 2017).
+
+### 4. Project Team Collaboration
+We would collaborate with a team of three main groups:
+Data & Analytics: Data Scientists build the models, and Data Engineers maintain the data pipelines.
+HR & Business: HR Business Partners use the predictions for employee interventions, and Business Leaders implement organizational changes based on insights.
+Ethics & Legal: Legal Counsel and Compliance Officers ensure the model operates fairly, without bias, and adheres to privacy laws.
 
 ### 5. Highlight any potential data quality issues with your model(s)
 When building predictive models, data quality can make or break your results. Missing values create blind spots, outliers skew your coefficients, and inconsistent categories muddy the waters. Duplicate records artificially inflate certain patterns while unbalanced classes push predictions toward the majority. Even something as basic as incorrect data types can violate core model assumptions. Taking time to clean and validate your data upfront saves countless headaches down the road—it's the unglamorous work that makes everything else possible.
+
+### 6. Key Patterns to identify in the models
+Our goal is to find out the real stories behind why our employees leave. Our models will help us to see when certain factors come together—like low job satisfaction, long commutes, and constant overtime—to quietly push employees toward resignation. Logistic regression will show which issues matter most, while decision trees will show how they interact in everyday situations. Random Forest will confirm the top drivers across the organization. By turning these findings into plain insights, the HR can focus on the real-life challenges that employees face and take action before they decide to go.
+
+### Reference
+Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning: Data mining, inference, and prediction (2nd ed.). Springer Science+Business Media.
+Shmueli, G., Patel, N. R., & Bruce, P. C. (2017). Data mining for business analytics: Concepts, techniques, and applications in R. Wiley.
