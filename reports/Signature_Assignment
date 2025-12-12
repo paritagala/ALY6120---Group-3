@@ -1,0 +1,40 @@
+Business Understanding
+This phase establishes the project's overall objectives and success criteria.
+Business Objectives 
+The overarching business problem is employee turnover (attrition). The objective is to help the company move from reacting to turnover to preventing it.
+Goal: Strengthen workforce retention strategies by identifying meaningful patterns in employee attrition.
+Outcome: Design targeted interventions and implement organizational changes grounded in data-driven evidence.
+Value: Quantify the cost of turnover and highlight high-risk roles, making retention efforts easier to justify.
+Data Mining Goal 
+The Data Mining Goal is to uncover the key drivers of attrition and predict employees at risk of leaving.
+Prediction: Identify who is most at risk of leaving and the reasons behind it.
+Discovery: Find out the real stories behind why employees leave, such as when low job satisfaction, long commutes, and constant overtime come together to push employees toward resignation.
+Business Success Criteria 
+Success will be measured by the ability of the models to provide actionable insights that lead to measurable improvements in retention metrics.
+A successful model will enable HR to focus on real-life challenges and take action before employees decide to go.
+The findings must be clear and translatable into practical decision points for managers.
+Data Understanding
+This phase focuses on collecting, describing, exploring, and verifying the quality of the data.
+Collect Initial Data (Data Sources) 
+The primary dataset for this project is the IBM HR Analytics Employee Attrition & Performance dataset.
+Acquisition Method (for this project): The synthetic dataset is acquired externally from Kaggle, a reliable, publicly accessible source for academic and professional analytics.
+Acquisition Method (in a real corporate setting): This type of data would be acquired internally from systems such as HRIS, payroll, performance management systems, and employee engagement systems.
+Data Content: The dataset includes variables related to:
+Employee Demographics (Age, gender, marital status, education) 
+Job & Organizational Variables (Job role, job satisfaction, work-life balance) 
+Compensation & Benefits (Monthly income, stock option level) 
+Workplace Behavior (Distance from home, overtime status, total working years) 
+Target Variable: Attrition Labels (Whether the employee left the company – Yes/No) 
+Verify Data Quality 
+Ensuring data quality, reliability, and suitability is critical before modeling.
+Potential Issues Highlighted:
+Missing values (gaps in fields like education or income).
+Outliers (e.g., in monthly income or daily rate).
+Inconsistent categories or incorrect data types.
+Duplicate records or unbalanced classes (where most people stay while fewer leave).
+Incorrect values (e.g., negative ages, "Years at Company" > "Total Working Years").
+Quality Assessment Steps:
+Identify and quantify missing data; impute numerical values (mean/median) or categorical values (mode/unknown category).
+Check for and correct incorrect values, duplicated IDs, or inconsistent combinations.
+Detect outliers for numerical fields, evaluate them, and either correct or remove them.
+Ensure correct data types and document all cleaning decisions.
