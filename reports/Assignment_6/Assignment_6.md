@@ -227,7 +227,8 @@ Given the sensitivity of HR analytics, several ethical safeguards were implement
 The evaluation verifies that the models we used fulfilled project goals by delivering dependable forecasts, understandable clarifications and practical recommendations. 
 The Logistic Regression offers clarity, Decision Tree yields clear guidelines, and Random Forest achieves robust predictive accuracy. United, they create a strong base for forward-thinking employee retention approaches. The project is ready to move into the Deployment phase with established direction on communication, governance, and monitoring in organizational practices.
 
-###Deployment###
+
+###5 Deployment
 At the deployment phase, we will focus on translating the model outputs into routine HR actions, ensuring analytics creates value beyond evaluation results. Consistent with the CRISP-DM framework, deployment emphasizes embedding insights into organizational processes so that findings directly inform decisions rather than remain analytical artifacts (Chapman et al., 2000).
 
 In practice, the evaluated attrition models would be operationalized through a regularly refreshed HR dashboard. Instead of presenting technical metrics, we will group employees into low-, medium-, and high-risk attrition categories. This design follows best practices in business analytics, where simplifying outputs improves managerial adoption and decision quality (Shmueli et al., 2017). HR teams can then prioritize attention without treating predictions as automatic decisions.
