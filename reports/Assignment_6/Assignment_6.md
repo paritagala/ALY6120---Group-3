@@ -1,10 +1,10 @@
-
+###Signature Assessment (Group 3)###
 
 # CRISP-DM: Business Understanding and Data Understanding
 This phase establishes the project’s overall objectives and success criteria.
 
 
-### Business Objectives
+### 1 Business Objectives
 
 The overarching business problem is **employee turnover (attrition)**.  
 The aim is to shift the organization from **reacting** to turnover toward **preventing** it through data-driven decision-making.
@@ -111,9 +111,57 @@ Steps taken to validate and prepare data:
 5. **Document all cleaning decisions**
    - Maintain transparency and reproducibility
   
+##3. Data Preparation
+The Data Preparation stage of the CRISP-DM framework is a critical step that transforms the raw IBM HR Analytics Employee Attrition & Performance dataset into a high-quality analytical asset suitable for modelling. Since this dataset reflects many of the variables found in real-world HRIS environments including demographic, organizational, behavioral, and compensation-related features, rigorous preparation is required to ensure that both the predictive models and subsequent interpretations are valid, reliable, and ethically defensible. This stage focuses on selecting relevant data, cleaning and correcting inconsistencies, engineering meaningful features, and preparing the final dataset for use in logistic regression, decision tree, and Random Forest models.
+
+Data Selection
+Although the dataset contains a wide range of variables, not all fields contribute meaningfully to attrition prediction or align with the business objectives. During this phase:
+· Irrelevant or redundant variables (e.g., Employee Count, Standard Hours, Employee Number) were removed because they offer no predictive value.
+· Features directly tied to the target variable (such as Attrition) were retained as-is.
+· Predictor variables expected to influence attrition, job satisfaction, overtime, years at company, income, and work - life balance were prioritized for deeper cleaning and transformation.
+This step ensures that only variables aligned with the business problem and data mining goals progress through the modelling pipeline.
+
+Data Cleaning
+Data cleaning addresses inaccuracies and prepares the dataset for consistent interpretation.
+
+Handling Missing Data
+Although the IBM dataset contains limited missing values due to its synthetic design, a robust workflow was implemented to mirror what would be required in a real corporate HR environment:
+· Numerical variables were imputed using median or mean values.
+· Categorical variables were imputed using mode or assigned an “Unknown” category.
+· Documentation of cleaning decisions was maintained to preserve transparency.
+
+Resolving Inconsistencies
+Quality checks were conducted to identify:
+· Inaccurate or impossible values (e.g., Years at Company > Total Working Years)
+· Mismatched categorical entries
+· Duplicate records
+· Conflicting combinations such as high Job Satisfaction paired with Very Low Work-Life Balance when inconsistent with broader profile patterns
+These inconsistencies were corrected or removed based on HR logic and dataset constraints.
+
+Outlier Detection and Treatment
+Outliers can distort model coefficients, especially for interpretable models such as logistic regression. Several numerical fields were assessed, including:
+· Monthly Income
+· Daily Rate
+· Total Working Years
+· Distance From Home
+Boxplots and z-score analysis were used to detect extreme values. Outliers without plausible HR justification were removed or capped to preserve the predictive integrity of the dataset.
+
+Data Transformation
+To ensure compatibility with machine learning models, several transformations were applied Categorical Encoding, Feature Scaling and Feature Engineering. These ensured that the logistic
+regression model could interpret categorical data numerically and that the Random Forest model could maximize pattern detection.
+
+Addressing Class Imbalance
+Employee attrition is naturally imbalanced, with far more employees staying than leaving. To prevent models from over-predicting the majority class:
+· SMOTE oversampling was applied during model training
+· Class weights were adjusted for logistic regression
+· Random Forest was tuned using balanced subsampling parameters
+These steps ensure the model can recognize high-risk employees without bias toward the dominant class.
+
+Dataset Integration and Finalization
+All cleaned, encoded, and engineered variables were consolidated into a finalized modelling dataset. This final prepared dataset provided the foundation for building a robust predictive model that accurately would detect attrition risk and support HR’s proactive retention strategies.
 
 
-### EVALUATION
+### 4 Modeling and EVALUATION
 At this evaluation stage, we determine if the created models effectively meet the initial business goals. This project sought to accurately forecast attrition while making sure insights were understandable, actionable, equitable, and in line with Human Resource leadership requirements. This stage assesses model effectiveness from technical and business viewpoints
 
 ### Evaluation Criteria and Metrics
@@ -178,6 +226,26 @@ Given the sensitivity of HR analytics, several ethical safeguards were implement
 
 The evaluation verifies that the models we used fulfilled project goals by delivering dependable forecasts, understandable clarifications and practical recommendations. 
 The Logistic Regression offers clarity, Decision Tree yields clear guidelines, and Random Forest achieves robust predictive accuracy. United, they create a strong base for forward-thinking employee retention approaches. The project is ready to move into the Deployment phase with established direction on communication, governance, and monitoring in organizational practices.
+
+###Deployment###
+At the deployment phase, we will focus on translating the model outputs into routine HR actions, ensuring analytics creates value beyond evaluation results. Consistent with the CRISP-DM framework, deployment emphasizes embedding insights into organizational processes so that findings directly inform decisions rather than remain analytical artifacts (Chapman et al., 2000).
+
+In practice, the evaluated attrition models would be operationalized through a regularly refreshed HR dashboard. Instead of presenting technical metrics, we will group employees into low-, medium-, and high-risk attrition categories. This design follows best practices in business analytics, where simplifying outputs improves managerial adoption and decision quality (Shmueli et al., 2017). HR teams can then prioritize attention without treating predictions as automatic decisions.
+
+We also includes a clear action layer. For example, if the dashboard reveals persistent high-risk signals driven by frequent overtime, HR may initiate workload reviews or staffing adjustments. If elevated risk is associated with low job satisfaction, targeted manager check-ins or engagement initiatives can be introduced. These examples illustrate how analytics supports intervention planning rather than merely identifying risk, aligning with applied predictive modeling guidance that stresses actionability over accuracy alone (Hastie et al., 2009).
+
+Post-deployment responsibilities will also be assigned clearly. HR business partners interpret results and coordinate interventions, while analytics teams monitor model stability and refresh predictions as new data become available. Leadership oversight ensures analytical insights remain aligned with organizational priorities and ethical expectations.
+Finally, deployment success will be monitored over time. Trends in attrition rates and post-intervention outcomes are reviewed periodically to assess impact. Continuous feedback allows both the analytical process and HR practices to evolve, supporting sustainable retention strategies rather than one-time analytical insights.
+
+###References ###
+
+Chapman, P., Clinton, J., Kerber, R., Khabaza, T., Reinartz, T., Shearer, C., & Wirth, R. (2000). CRISP-DM 1.0: Step-by-step data mining guide.
+
+Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning (2nd ed.). Springer.
+
+Shmueli, G., Patel, N. R., & Bruce, P. C. (2017). Data mining for business analytics. Wiley.
+
+
 
 
 
