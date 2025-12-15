@@ -33,7 +33,7 @@ Success will be measured by the model’s ability to produce **actionable**, **p
 - Success is defined by **measurable improvements** in retention metrics (e.g., reduced attrition rate).
 
 
-## 2. Data Understanding
+### 2 Data Understanding
 
 This phase focuses on **collecting**, **describing**, **exploring**, and **verifying** data quality.
 
@@ -228,7 +228,7 @@ The evaluation verifies that the models we used fulfilled project goals by deliv
 The Logistic Regression offers clarity, Decision Tree yields clear guidelines, and Random Forest achieves robust predictive accuracy. United, they create a strong base for forward-thinking employee retention approaches. The project is ready to move into the Deployment phase with established direction on communication, governance, and monitoring in organizational practices.
 
 
-###5 Deployment
+### 5 Deployment
 At the deployment phase, we will focus on translating the model outputs into routine HR actions, ensuring analytics creates value beyond evaluation results. Consistent with the CRISP-DM framework, deployment emphasizes embedding insights into organizational processes so that findings directly inform decisions rather than remain analytical artifacts (Chapman et al., 2000).
 
 In practice, the evaluated attrition models would be operationalized through a regularly refreshed HR dashboard. Instead of presenting technical metrics, we will group employees into low-, medium-, and high-risk attrition categories. This design follows best practices in business analytics, where simplifying outputs improves managerial adoption and decision quality (Shmueli et al., 2017). HR teams can then prioritize attention without treating predictions as automatic decisions.
