@@ -111,7 +111,7 @@ Steps taken to validate and prepare data:
 5. **Document all cleaning decisions**
    - Maintain transparency and reproducibility
   
-##3. Data Preparation
+### 3 Data Preparation
 The Data Preparation stage of the CRISP-DM framework is a critical step that transforms the raw IBM HR Analytics Employee Attrition & Performance dataset into a high-quality analytical asset suitable for modelling. Since this dataset reflects many of the variables found in real-world HRIS environments including demographic, organizational, behavioral, and compensation-related features, rigorous preparation is required to ensure that both the predictive models and subsequent interpretations are valid, reliable, and ethically defensible. This stage focuses on selecting relevant data, cleaning and correcting inconsistencies, engineering meaningful features, and preparing the final dataset for use in logistic regression, decision tree, and Random Forest models.
 
 Data Selection
