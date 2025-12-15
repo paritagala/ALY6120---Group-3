@@ -160,8 +160,14 @@ These steps ensure the model can recognize high-risk employees without bias towa
 Dataset Integration and Finalization
 All cleaned, encoded, and engineered variables were consolidated into a finalized modelling dataset. This final prepared dataset provided the foundation for building a robust predictive model that accurately would detect attrition risk and support HR’s proactive retention strategies.
 
+### 4 Modeling
+In the modeling phase, the objective was to build predictive models that support business understanding and future deployment rather than to optimize technical performance. Since employee attrition is a binary outcome, classification models were selected to estimate the likelihood of employees leaving the organization.
 
-### 4 Modeling and EVALUATION
+A layered modeling approach was adopted. Logistic Regression was used as the baseline model because it provides clear and interpretable insights into how key factors such as overtime, job satisfaction, and tenure influence attrition risk. Decision Trees were then applied to capture non-linear relationships and interaction effects that reflect real-world HR decision patterns. Finally, a Random Forest model was developed to improve prediction stability and handle complex feature interactions within the dataset.
+
+This combination of models allows the project to balance interpretability and predictive capability. Simpler models help explain why attrition risk occurs, while the ensemble model strengthens reliability for identifying at-risk employees. Importantly, modeling decisions were guided by downstream evaluation and deployment needs, ensuring that model outputs remain understandable, actionable, and suitable for operational use within HR processes.
+
+### 5 Modeling and EVALUATION
 At this evaluation stage, we determine if the created models effectively meet the initial business goals. This project sought to accurately forecast attrition while making sure insights were understandable, actionable, equitable, and in line with Human Resource leadership requirements. This stage assesses model effectiveness from technical and business viewpoints
 
 ### Evaluation Criteria and Metrics
@@ -228,7 +234,7 @@ The evaluation verifies that the models we used fulfilled project goals by deliv
 The Logistic Regression offers clarity, Decision Tree yields clear guidelines, and Random Forest achieves robust predictive accuracy. United, they create a strong base for forward-thinking employee retention approaches. The project is ready to move into the Deployment phase with established direction on communication, governance, and monitoring in organizational practices.
 
 
-### 5 Deployment
+### 6 Deployment
 At the deployment phase, we will focus on translating the model outputs into routine HR actions, ensuring analytics creates value beyond evaluation results. Consistent with the CRISP-DM framework, deployment emphasizes embedding insights into organizational processes so that findings directly inform decisions rather than remain analytical artifacts (Chapman et al., 2000).
 
 In practice, the evaluated attrition models would be operationalized through a regularly refreshed HR dashboard. Instead of presenting technical metrics, we will group employees into low-, medium-, and high-risk attrition categories. This design follows best practices in business analytics, where simplifying outputs improves managerial adoption and decision quality (Shmueli et al., 2017). HR teams can then prioritize attention without treating predictions as automatic decisions.
